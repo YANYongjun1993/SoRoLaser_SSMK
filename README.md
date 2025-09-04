@@ -37,15 +37,35 @@ The **Initial Mode** equalizes cable tension across the four cables at the begin
 
 Finally, the **Output Processing** module encodes the motor displacement commands into CAN bus signals.
 
-Please refer to the model's at \matlab folder for more information.
+Please refer to the models in ~/matlab folder for more information.
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start (Example:SSMK-MPC)
 
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/YANYongjun1993/SoRoLaser_SSMK.git
 cd ssmk-mpc
 ```
-### 2. Collect data using your soft robot
+### 2. Collect decaying and control data
+- Use the Simulink model ControlDataSSM0709.slx from ~/matlab/TeleOperationDataCollection to collect the soft manipulator’s state data under your defined control inputs.
+
+### 3. Training the SSMK model
+- Save data in `~/matlab/SSMK-Learning/rawData`.
+- Run dataPreprocessing.m to preprocess the data.
+- Run `SSMKTraining.m` to train the SSMK model.
+- Outputs
+  - `~/matlab/SSMK-Learning/SSM_model.mat`
+  - `~/matlab/SSMK-Learning/systems/fromData/n-2_m-2_del-1_2025-08-21_11-40.mat`
+
+### 4. Deploy the SSMK model as an SSMK-MPC controller
+- Go to `~/matlab/SSMK-MPC`.
+- Run `SSMK_SymFunc_Precompute.m` to generate symbolic expressions.
+- Run `SSMK_Matrics_Precompute.m` to compute offline matrices (see [Dense MPC Formulation](https://www.sciencedirect.com/science/article/pii/S000510981830133X?casa_token=hwZ4-uQ4BbcAAAAA:DMWDQx4VhUhP9IqOeqC3Vdn4yEIv91Iu6oIYq6NF3NjCUqx7c5nGeiKGV1PrisWBF9uID5PV)).
+- Update file paths for `SSM_model.mat` and `n-2_m-2_del-1_2025-08-21_11-40.mat` in both scripts.
+- Run `SSMKMPC.slx`.
+
+### 5. Note
+- Currently runs only on PC with MATLAB and quadprog.
+- Migration to Speedgoat (real-time) is in progress using `OSQP` to replace `quadprog`.
