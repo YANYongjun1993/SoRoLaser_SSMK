@@ -13,9 +13,8 @@ function f = generate_functions( data4sysid,  ssm_model)
 % Get users' functions for generating sub-functions of users' optimization 
 % problems from the trained koopman-model in .\Koopman_Model_Learning folder.
 %
-% Last update: July/21/2025 by Yongjun Yan
-% Revision history: generate the symbolic expression for the Koopman-based
-% MPC algorithm
+% Last update: July/21/2025 by XXXXXX
+% Revision history: generate the symbolic expression for the SSMK-MPC algorithm
 %  x     : The state at the lifted space.
 %  u     : The control variables.
 %  y     : The state at the low-dimensional space.

@@ -30,9 +30,8 @@ function [H, G, D, c, L, M]=generate_functions(MPC, data4sysid, var)
 % problems from the trained koopman-model in E:\Research\SRIL\14th\
 % TroRevision\HardwareExperiemnt\SSMKTraining\systems\fromData folder.
 %
-% Last update: July/21/2025 by Yongjun Yan
-% Revision history: generate the symbolic expression for the Koopman-based
-% MPC algorithm
+% Last update: July/21/2025 by XXXXXX
+% Revision history: generate the symbolic expression for the SSMK-MPC algorithm
 %% ------------------------------------------------------------------------
 % Do not modify below this line 
 %% ------------------------------------------------------------------------

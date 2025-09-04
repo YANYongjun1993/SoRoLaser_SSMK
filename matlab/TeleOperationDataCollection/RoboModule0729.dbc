@@ -1,0 +1,237 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ temp_current : 0|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 91 Feedback_curvelpos_Dr5: 8 Vector__XXX
+ SG_ real_position : 39|32@0- (1,0) [0|0] "qc" Vector__XXX
+ SG_ real_velocity : 23|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ real_current : 7|16@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 85 Position_Dr5: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 394 RadioLink_4: 8 Vector__XXX
+ SG_ Channel16 : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel15 : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel14 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel13 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 393 RadioLink_3: 8 Vector__XXX
+ SG_ Channel9 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel12 : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel11 : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel10 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 392 RadioLink_2: 8 Vector__XXX
+ SG_ Channel8 : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel7 : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel6 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel5 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 391 RadioLink_1: 8 Vector__XXX
+ SG_ Channel4 : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel3 : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel2 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Channel1 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 69 Position_Dr4: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 53 Position_Dr3: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 37 Position_Dr2: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 21 Position_Dr1: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2148012672 Cable_tension: 8 Vector__XXX
+ SG_ Force_sensor_4 : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Force_sensor_3 : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Force_sensor_2 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Force_sensor_1 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 75 Feedback_curvelpos_Dr4: 8 Vector__XXX
+ SG_ real_position : 39|32@0- (1,0) [0|0] "qc" Vector__XXX
+ SG_ real_velocity : 23|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ real_current : 7|16@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 59 Feedback_curvelpos_Dv3: 8 Vector__XXX
+ SG_ real_position : 39|32@0- (1,0) [0|0] "qc" Vector__XXX
+ SG_ real_velocity : 23|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ real_current : 7|16@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 43 Feedback_curvelpos_Dv2: 8 Vector__XXX
+ SG_ real_position : 39|32@0- (1,0) [0|0] "qc" Vector__XXX
+ SG_ real_velocity : 23|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ real_current : 7|16@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 70 Velocity_position_Dr4: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ temp_velocity : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 54 Velocity_position_Dr3: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ temp_velocity : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 38 Velocity_position_Dr2: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ temp_velocity : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 16 Reset_1: 8 Vector__XXX
+ SG_ Data7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 29 ERROR: 8 Vector__XXX
+ SG_ Data7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ stall_protection : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 28 Feedback_others: 8 Vector__XXX
+ SG_ PWM_LOW : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PWM_HIGH : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CHZ : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ASIN_LOW : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ASIN_HIGH : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DSIN : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CTL2 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CTL1 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 27 Feedback_curvelpos_Dv1: 8 Vector__XXX
+ SG_ real_position : 39|32@0- (1,0) [0|0] "qc" Vector__XXX
+ SG_ real_velocity : 23|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ real_current : 7|16@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 26 Configuration_1: 8 Vector__XXX
+ SG_ output_cycle_curvelpos : 7|8@0+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ Data7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ output_cycle_others : 15|8@0+ (1,0) [0|0] "mm" Vector__XXX
+
+BO_ 22 Velocity_position_Dr1: 8 Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ temp_velocity : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 17 Mode_Selection_1: 8 Vector__XXX
+ SG_ Data7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mode : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 10 Configuration_all: 8 Vector__XXX
+ SG_ output_cycle_others : 15|8@0+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ Data7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ output_cycle_curvelpos : 7|8@0+ (1,0) [0|0] "mm" Vector__XXX
+
+BO_ 6 Velocity_position_all: 8 Vector__XXX
+ SG_ temp_velocity : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_pwm : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ temp_position : 39|32@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1 Mode_Selection_all: 8 Vector__XXX
+ SG_ Mode : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 0 Reset_all: 8 Vector__XXX
+ SG_ Data7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Data0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+
