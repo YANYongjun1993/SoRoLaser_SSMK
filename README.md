@@ -19,12 +19,33 @@ This repository provides the implementation of an **MPC controller with a data-d
   Precise micromotion control enables sharp incisions, reduced collateral thermal damage, and motion compensation for respiration and heartbeat.  
 
 ---
+## 🚩 Introduction
+
+### 1. System communication architecture
+![System communication architecture](docs/figures/Architecture.png)
+**Figure 1:** System communication architecture
+
+The system communication architecture of the soft laser manipulator is illustrated in Figure 1. The control program is implemented and deployed on the rapid control prototyping machine, Speedgoat, to execute the control algorithm. All input signals required by the algorithm (e.g., cable tension, channels from the RC transmitter) and all output signals calculated by the algorithm (e.g., desired motor displacements) are transmitted to Speedgoat for processing. At the physical communication layer, most components of the soft laser manipulator system—such as Speedgoat, motor drivers, EM tracker, load cells, and the RC transmitter—communicate via CAN bus. The laser system communicates with Speedgoat via RS-232, allowing the laser to be turned on or off using the RC transmitter.
+
+### 2. Control algorithm architecture
+![System communication architecture](docs/figures/ControlAlgorithmArchitecture.png)
+**Figure 2:** Control algorithm architecture
+
+The control algorithm architecture of the soft laser manipulator is illustrated in Figure 2. The block on the left represents **Input Processing**, which handles incoming signals from the CAN bus. Below it is the **Mode Selection** block, responsible for initializing the motor driver and activating the appropriate mode based on the RC transmitter signal. At the center of the Simulink model lies the **Control Module**, which consists of four subsystems: **Initial Mode**, **Autonomous Control Mode**, **Individual Motor Adjustment Mode**, and **Robot Translation Movement Mode**.
+
+The **Initial Mode** equalizes cable tension across the four cables at the beginning of each trial using load cell feedback, as pretension is critical for accurate laser spot steering. The **Task-Specific Control Mode** serves as the main block that executes the control algorithms designed for different tasks. For example, in the teleoperation task for confined-space navigation, this mode is customized to tune the bending direction via the RC transmitter. In the data collection task with random inputs, it is configured to replay offline-generated random control sequences. In autonomous control tasks, it is replaced by the constructed SSMK/SSMP/K-MPC controllers. The **Individual Motor Adjustment Mode** allows users to control each motor independently through the RC transmitter. The **Robot Translation Movement Mode** enables translation control of the entire robot system via the RC transmitter.
+
+Finally, the **Output Processing** module encodes the motor displacement commands into CAN bus signals.
+
+Please refer to the model's at \matlab folder for more information.
+
+---
 
 ## 🚀 Quick Start
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/ssmk-mpc.git
+git clone https://github.com/YANYongjun1993/SoRoLaser_SSMK.git
 cd ssmk-mpc
-
-<img width="1666" height="835" alt="Architecture" src="https://github.com/user-attachments/assets/1e8cb86f-07f9-498d-a345-6e32f0343d7c" />
+```
+### 2. Collect data using your soft robot
