@@ -67,6 +67,8 @@ cd ssmk-mpc
 - Update file paths for `SSM_model.mat` and `n-2_m-2_del-1_2025-08-21_11-40.mat` in both scripts.
 - Run `SSMKMPC.slx`.
 
-### 5. Note
+### 5. Laser spot detection
+- The laser spot can be detected following the project at [Laser Spot Detection](https://github.com/YANYongjun1993/myview).
+### 6. Note
 - Currently runs only on PC with MATLAB and quadprog.
 - Migration to Speedgoat (real-time) is in progress using `OSQP` to replace `quadprog`.
